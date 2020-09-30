@@ -10,8 +10,8 @@ http://github.com/YannickLeRoux
 from bs4 import BeautifulSoup
 import re
 from urllib.request import urlopen
-
-f = urlopen('http://www.bc.edu/a-z/directories/contact/quicknos.html')
+url='http://www.bc.edu/a-z/directories/contact/quicknos.html'
+f = urlopen(url)
 
 s = BeautifulSoup(f, 'html.parser')
 s = s.get_text()
